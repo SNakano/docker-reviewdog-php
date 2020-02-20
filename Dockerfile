@@ -1,9 +1,9 @@
 FROM php:7-cli
 
-ENV PHPSTAN_VERSION 0.11.8
-ENV PHPCS_VERSION 3.4.2
-ENV PHAN_VERSION 2.2.3
-ENV REVIEWDOG_VERSION v0.9.12
+ENV PHPSTAN_VERSION 0.12.11
+ENV PHPCS_VERSION 3.5.4
+ENV PHAN_VERSION 2.4.9
+ENV REVIEWDOG_VERSION v0.9.17
 
 RUN curl -sL "https://github.com/phpstan/phpstan/releases/download/${PHPSTAN_VERSION}/phpstan.phar" -o /usr/bin/phpstan
 RUN curl -sL "https://github.com/squizlabs/PHP_CodeSniffer/releases/download/${PHPCS_VERSION}/phpcs.phar" -o /usr/bin/phpcs
